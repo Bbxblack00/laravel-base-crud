@@ -1,0 +1,27 @@
+//
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkgoldenrod;
+}
+
+.container {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+
+    .row {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
