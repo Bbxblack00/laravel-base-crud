@@ -10,8 +10,8 @@ class HotelController extends Controller
     public function index() {
         $ospiti = Ospite::all();
 
-        dd($ospiti);
+        // dd($ospiti);
 
-        return view('pages.home', compact(''));
+        return view('pages.home', compact('ospiti'));
     }
 }
