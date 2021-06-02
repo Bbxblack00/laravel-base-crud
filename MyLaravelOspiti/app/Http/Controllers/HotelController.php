@@ -14,4 +14,12 @@ class HotelController extends Controller
 
         return view('pages.home', compact('ospiti'));
     }
+
+    public function ospite($id) {
+        $ospite = Ospite::findOrFail($id);
+
+        // dd($ospiti);
+
+        return view('pages.ospite', compact('ospiti'));
+    }
 }

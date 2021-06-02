@@ -17,8 +17,8 @@ Route::get('/', 'HotelController@index')
     -> name('home');
 
 
-Route::get('/employee/{id}', 'HotelController@Employee')
-    -> name('employee');
+Route::get('/ospite/{id}', 'HotelController@ospite')
+    -> name('ospite');
 
 
 Route::get('/create/worker/', 'HotelController@create')
