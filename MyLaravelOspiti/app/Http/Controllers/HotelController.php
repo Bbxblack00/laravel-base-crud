@@ -20,6 +20,6 @@ class HotelController extends Controller
 
         // dd($ospiti);
 
-        return view('pages.ospite', compact('ospiti'));
+        return view('pages.ospite', compact('ospite'));
     }
 }

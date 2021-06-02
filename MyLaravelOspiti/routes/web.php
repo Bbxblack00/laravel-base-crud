@@ -21,17 +21,5 @@ Route::get('/ospite/{id}', 'HotelController@ospite')
     -> name('ospite');
 
 
-Route::get('/create/worker/', 'HotelController@create')
-    -> name('create');
-
-
-Route::post('update/worker/{id}', 'HotelController@update')
-    -> name('update');
-
-
 Route::post('/store/worker/', 'HotelController@store')
     -> name('store');
-
-
-Route::get('/destroy/{id}', 'HotelController@destroy')
-    -> name('destroy');
