@@ -13,6 +13,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HotelController@index')
+    -> name('home');
+
+
+Route::get('/employee/{id}', 'HotelController@Employee')
+    -> name('employee');
+
+
+Route::get('/create/worker/', 'HotelController@create')
+    -> name('create');
+
+
+Route::post('update/worker/{id}', 'HotelController@update')
+    -> name('update');
+
+
+Route::post('/store/worker/', 'HotelController@store')
+    -> name('store');
+
+
+Route::get('/destroy/{id}', 'HotelController@destroy')
+    -> name('destroy');
