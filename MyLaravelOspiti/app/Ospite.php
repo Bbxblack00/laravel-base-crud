@@ -8,7 +8,7 @@ class Ospite extends Model
 {
     protected $table = 'ospiti';
     protected $fillable = [
-        'firstname',
+        'name',
         'lastname',
         'date_of_birth',
         'document_type',
