@@ -11,5 +11,11 @@
         </div>
         
     @endforeach
+
+    <a href="{{ route('create') }}" class="btn">
+        <button>
+            CREATE
+        </button>
+    </a>
     
 @endsection

@@ -26,3 +26,16 @@ body {
   color: purple;
 }
 
+.container a {
+  color: red;
+  text-decoration: none;
+}
+
+.container a:hover {
+  color: darkslategray;
+}
+
+.container .btn {
+  padding: 5pc;
+}
+

@@ -21,5 +21,9 @@ Route::get('/ospite/{id}', 'HotelController@ospite')
     -> name('ospite');
 
 
+Route::get('/make/ospite', 'HotelController@create')
+    -> name('create');
+
+
 Route::post('/store/worker/', 'HotelController@store')
     -> name('store');

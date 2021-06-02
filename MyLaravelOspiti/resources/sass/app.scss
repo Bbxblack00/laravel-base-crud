@@ -29,4 +29,17 @@ body {
         margin: 20px 0;
         color: purple;
     }
+
+    a {
+        color: red;
+        text-decoration: none;
+
+        &:hover {
+            color: darkslategray;
+        }
+    }
+
+    .btn {
+        padding: 5pc;
+    }
 }

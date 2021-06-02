@@ -32,7 +32,7 @@
 
         <div class="row">
             <label for="document_number" class="inp-wrk">numero di documento:</label>
-            <input type="number" name="document_number" class="inp-wrk">
+            <input type="text" name="document_number" class="inp-wrk">
         </div>
 
         <div class="row">

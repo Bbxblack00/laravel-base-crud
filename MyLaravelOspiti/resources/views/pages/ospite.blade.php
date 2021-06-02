@@ -10,5 +10,11 @@
     <p class="br">{{ $ospite -> document_type }}</p>
 
     <p class="br">{{ $ospite -> document_number }}</p>
+
+    <a href="{{ route('create') }}" class="btn">
+        <button>
+            CREATE
+        </button>
+    </a>
     
 @endsection

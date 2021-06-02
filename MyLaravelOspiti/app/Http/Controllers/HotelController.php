@@ -22,4 +22,23 @@ class HotelController extends Controller
 
         return view('pages.ospite', compact('ospite'));
     }
+
+    public function create() {
+
+        return view('pages.create');
+    }
+
+    public function store(Request $request) {
+
+        $validate = $request -> validate([
+            'firstname' => 'max:128',
+            'lastname' => 'max:128',
+            'Date_of_birth' => 'nullable',
+            'document_type' => 'max:2',
+            'document_number' => 'min:4|max:10'
+        ]);
+
+        $ospite = Ospite::create($validate);
+        return redirect() -> route('home');
+    }
 }
